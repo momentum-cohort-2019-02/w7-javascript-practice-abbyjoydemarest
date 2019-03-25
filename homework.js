@@ -78,6 +78,16 @@ function lesser(number1, number2) {
 // eo - Saluton, <name>!
 //
 // If any other language code is used, return nothing.
+function multigreeting(name, languagecode) {
+    if (languagecode === "en")
+        return (`Hello, ${name}!`)
+    if (languagecode === "es")
+        return (`¡Hola, ${name}!`)
+    if (languagecode === "fr")
+        return (`Bonjour, ${name}!`)
+    if (languagecode === "eo")
+        return (`Saluton, ${name}!`)
+}
 
 // 10. Create a function called "sum" that takes an array of numbers and
 // returns the sum of those numbers.
