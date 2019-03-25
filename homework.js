@@ -91,14 +91,25 @@ function multigreeting(name, languagecode) {
 
 // 10. Create a function called "sum" that takes an array of numbers and
 // returns the sum of those numbers.
+function sum(numbers){
+    let total = 0
+    for (let number of numbers) {
+        total += number
+    }
+    return total
+}
 
 // 11. Create a function called "average" that takes an array of numbers
 // and returns the average of those numbers.
+// if array is empty then should undefined, call previous function sum then divide by the number of numbers in the array
 
 // 12. Create a function called "minimum" that takes an array of numbers and
 // returns the smallest number in that array.
 
 // 13. There are many techniques to sort arrays in programming. Your programming
+//minimun or index
+// names.indexOf()
+//Array.splice()
 // language will likely include the ability to do this. We are going to
 // implement sorting ourselves, however.
 //
@@ -107,7 +118,7 @@ function multigreeting(name, languagecode) {
 // smallest number in the array. You then insert that into a new array as the first
 // element and remove it from the original array. You continue doing this until
 // there are no numbers left in the original array.
-//
+//.push()to insert as last item in the new array
 // Create a function called selectionSort that takes an array of numbers and returns
 // a sorted array using the above technique.
 //
