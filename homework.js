@@ -52,6 +52,10 @@ function celsiusToFahrenheit(temperature) {
 // fahrenheitToCelsius function.
 // Absolute zero (0 K) is equivalent to −273.15 C.
 // 1 degree Kelvin equals 1 degree Celsius.
+function fahrenheitToKelvin(temperature) {
+    const newTemperature = fahrenheitToCelsius(temperature) + 273.15
+    return newTemperature
+}
 
 // 8. Create a function called lesser that takes two numbers as
 // arguments and returns the lesser of them. This function should
