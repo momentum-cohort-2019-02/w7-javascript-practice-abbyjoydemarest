@@ -124,10 +124,11 @@ function minimum(numbers) {
         return small
 
 }
-// 13. There are many techniques to sort arrays in programming. Your programming
 //minimun or index
 // names.indexOf()
 //Array.splice()
+//.push()to insert as last item in the new array
+// 13. There are many techniques to sort arrays in programming. Your programming
 // language will likely include the ability to do this. We are going to
 // implement sorting ourselves, however.
 //
@@ -136,10 +137,30 @@ function minimum(numbers) {
 // smallest number in the array. You then insert that into a new array as the first
 // element and remove it from the original array. You continue doing this until
 // there are no numbers left in the original array.
-//.push()to insert as last item in the new array
+
 // Create a function called selectionSort that takes an array of numbers and returns
 // a sorted array using the above technique.
 //
+function selectionSort(numbers) {
+    let sort = []
+    let small = Math.min.apply(null, numbers)
+    let value = numbers.indexOf(small)
+    if (numbers.length === 0)
+        return []
+    if (numbers.length === 1)
+        return numbers
+    else
+        while (sort.length < numbers.length){
+            if (value > -1) {
+                numbers.splice(value)
+                }
+
+            return sort.push(small)
+            if (sort === numbers)
+                return sort
+    }
+}
+
 // Note 1: You do not actually want to delete things from the original array. You
 // should copy it first. To copy an array, use the following code:
 //
