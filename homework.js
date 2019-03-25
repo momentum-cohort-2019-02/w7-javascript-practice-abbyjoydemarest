@@ -102,7 +102,16 @@ function sum(numbers){
 // 11. Create a function called "average" that takes an array of numbers
 // and returns the average of those numbers.
 // if array is empty then should undefined, call previous function sum then divide by the number of numbers in the array
-
+function average(numbers) {
+    //I originally set the variable numberAverage inside else, but it wouldnt work. It needs tobe set beforehand.
+    let numberAverage = sum(numbers)/numbers.length
+    if (numbers.length === 0)
+        return undefined
+    if (numbers.length === 1)
+        return numbers
+    else
+        return numberAverage
+}
 // 12. Create a function called "minimum" that takes an array of numbers and
 // returns the smallest number in that array.
 
