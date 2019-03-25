@@ -42,7 +42,10 @@ function fahrenheitToCelsius(temperature){
 // 6. Create a function called celsiusToFahrenheit that takes a
 // Celsius temperature as an argument and returns the
 // temperature in Fahrenheit.
-
+function celsiusToFahrenheit(temperature) {
+    const newTemperature = ((9 / 5) * temperature + 32)
+    return newTemperature
+}
 // 7. Create a function called fahrenheitToKelvin that takes a
 // Fahrenheit temperature as an argument and returns the
 // temperature in Kelvin. This function must use your previous
